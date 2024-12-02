@@ -8,17 +8,13 @@
 
 // funtion def
 function calculateBanknotesWhile (amount) {
-
   // initialisation of variables
   const denominations = [10000, 5000, 2000, 1000, 500, 100]
   const result = {}
   let i = 0
-
   // while 23700 > 0 and i < legth of array loop
   while (amount > 0 && i < denominations.length) {
-  
     const denom = denominations[i]
-
     if (amount >= denom) {
       const count = Math.floor (amount / denom) //divides
       result[denom] = count
@@ -47,7 +43,6 @@ console.log(output)
 const findLongestWord = (sentence) => {
   const words = sentence.split('')
   let longestWord = ''
-
   for (let i = 0; i < words.length; i++) { 
     if (words[i].length > longestWord.length) {
       longestWord = words[i]
@@ -73,12 +68,9 @@ console.log(sentence)
 
 function calculateFinalBalance (initialBalance, transactions){
   let finalBalance = initialBalance
-
   for (let i = 0; i < transactions.length; i++) {
     finalBalance += transactions[i]
   }
-
   return finalBalance
 }
-
 console.log (calculateFinalBalance( 10000, [3000, -2000, -1500, 5000]))
