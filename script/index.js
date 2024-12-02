@@ -16,7 +16,7 @@ function calculateBanknotesWhile (amount) {
   while (amount > 0 && i < denominations.length) {
     const denom = denominations[i]
     if (amount >= denom) {
-      const count = Math.floor (amount / denom) //divides
+      const count = Math.floor (amount / denom) // divides
       result[denom] = count
       amount %= denom // get the remainder
     }
@@ -43,14 +43,16 @@ console.log(output)
 const findLongestWord = (sentence) => {
   const words = sentence.split('')
   let longestWord = ''
+
   for (let i = 0; i < words.length; i++) { 
     if (words[i].length > longestWord.length) {
       longestWord = words[i]
     }
   }
+
   return longestWord  
 }
-let sentence = findLongestWord('The quick brown fox jumps over the lazy dog')
+const sentence = findLongestWord('The quick brown fox jumps over the lazy dog')
 console.log(sentence)
 
 
@@ -73,4 +75,5 @@ function calculateFinalBalance (initialBalance, transactions){
   }
   return finalBalance
 }
+
 console.log (calculateFinalBalance( 10000, [3000, -2000, -1500, 5000]))
