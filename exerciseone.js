@@ -7,40 +7,39 @@ const sum = a
 a = b
 b = sum
 
-console.log ('a:', a)
-console.log ('b:', b)
+console.log('a:', a)
+console.log('b:', b)
 
 // 2) Write a program to calculate the area of a rectangle using variables for length and width
 const length = 10
 const width = 5
 const area = length * width
-console.log ('Area:', area)
+console.log('Area:', area)
 
 // Write a function that checks if a given number is positive, negative, or zero
 // Your code here
-function checkNumber (num) {
+function checkNumber(num) {
   if (num === 0) {
-    console.log ('num is zero')
+    console.log('num is zero')
   } else if (num < 0) {
-    console.log ('num is negative')
+    console.log('num is negative')
   } else if (num > 0) {
-    console.log ('num is Positive')
+    console.log('num is Positive')
   }
 }
 
-console.log (checkNumber(-5)) // Output Negative
-console.log (checkNumber(0)) // Output Zero
-console.log (checkNumber(7)) // Output Positive
+console.log(checkNumber(-5)) // Output Negative
+console.log(checkNumber(0)) // Output Zero
+console.log(checkNumber(7)) // Output Positive
 
 // Write a function that accepts a string and returns the number of vowels in it
-function countVowels (str) {
-  const vowelNum = str.toLowerCase ().split ('')
-  const vowel = ['a', 'e', 'i', 'o', 'u']
-  vowel = vowelCount
-  const vowelCount = 0
+function countVowels(str) {
+  const vowelNum = str.toLowerCase().split('')
+  let vowel = ['a', 'e', 'i', 'o', 'u']
+  let vowelCount = 0
 
   for (let i = 0; i < vowelNum.length; i++) {
-    if (vowelCount.includes(vowelNum[i])) vowelCount++
+    if (vowel.includes(vowelNum[i])) vowelCount++
   }
   return vowelCount
 }
