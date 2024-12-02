@@ -7,19 +7,20 @@
 // print
 
 // funtion def
-function calculateBanknotesWhile(amount) {
+function calculateBanknotesWhile (amount) {
+
   // initialisation of variables
   const denominations = [10000, 5000, 2000, 1000, 500, 100]
   const result = {}
   let i = 0
+
   // while 23700 > 0 and i < legth of array loop
   while (amount > 0 && i < denominations.length) {
-    // store value of index position into denom
+  
     const denom = denominations[i]
-    // condition
+
     if (amount >= denom) {
-      // logic
-      const count = Math.floor(amount / denom) //divides
+      const count = Math.floor (amount / denom) //divides
       result[denom] = count
       amount %= denom // get the remainder
     }
@@ -43,8 +44,8 @@ console.log(output)
 // return the longest word found
 // console.log findLongestWord()
 
-const findLongestWord = ( sentence ) => {
-  let words = sentence.split('')
+const findLongestWord = (sentence) => {
+  const words = sentence.split('')
   let longestWord = ''
 
   for (let i = 0; i < words.length; i++) { 
@@ -56,6 +57,7 @@ const findLongestWord = ( sentence ) => {
 }
 let sentence = findLongestWord('The quick brown fox jumps over the lazy dog')
 console.log(sentence)
+
 
 // Bank Transaction Tracker
 // Write a function that takes an initial balance and a list of transactions 
@@ -69,14 +71,14 @@ console.log(sentence)
 // RETURN finaBalance
 // consolelog function
 
-function calculateFinalBalance(initialBalance, transactions){
+function calculateFinalBalance (initialBalance, transactions){
   let finalBalance = initialBalance
 
-  for(let i = 0; i < transactions.length; i++) {
+  for (let i = 0; i < transactions.length; i++) {
     finalBalance += transactions[i]
   }
+
   return finalBalance
-  
 }
 
-console.log(calculateFinalBalance( 10000,[3000, -2000, -1500, 5000]))
+console.log (calculateFinalBalance( 10000, [3000, -2000, -1500, 5000]))

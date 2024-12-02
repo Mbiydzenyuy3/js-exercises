@@ -12,14 +12,14 @@ b = sum
 console.log('a:', a)
 console.log('b:', b)
 
-// 2) Write a program to calculate the area of a rectangle using variables for length and width.
+// 2) Write a program to calculate the area of a rectangle using variables for length and width
 let length = 10
 let width = 5
 let area;
 area = length * width
 console.log('Area:', area)
 // 1:55
-// Write a function that checks if a given number is positive, negative, or zero.
+// Write a function that checks if a given number is positive, negative, or zero
 
 // Your code here
 function checkNumber(num) {
@@ -39,7 +39,7 @@ console.log(checkNumber(7)) // Output Positive
 // Write a function that accepts a string and returns the number of vowels in it
 function countVowels(str) {
   let vowelNum = str.toLowerCase().split('')
-  const vowel = ['a', 'e', 'i', 'o', 'u'];
+  const vowel = ['a', 'e', 'i', 'o', 'u']
   let vowelCount = 0
 
   for (let i = 0; i < vowelNum.length; i++) {
