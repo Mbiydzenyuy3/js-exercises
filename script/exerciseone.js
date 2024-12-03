@@ -18,7 +18,7 @@ console.log('Area:', area)
 
 // Write a function that checks if a given number is positive, negative, or zero
 // Your code here
-function checkNumber(num) {
+function checkNumber (num) {
   if (num === 0) {
     console.log('num is zero')
   } else if (num < 0) {
@@ -33,9 +33,9 @@ console.log(checkNumber(0)) // Output Zero
 console.log(checkNumber(7)) // Output Positive
 
 // Write a function that accepts a string and returns the number of vowels in it
-function countVowels(str) {
+function countVowels (str) {
   const vowelNum = str.toLowerCase().split('')
-  let vowel = ['a', 'e', 'i', 'o', 'u']
+  const vowel = ['a', 'e', 'i', 'o', 'u']
   let vowelCount = 0
 
   for (let i = 0; i < vowelNum.length; i++) {
