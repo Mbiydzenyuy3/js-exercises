@@ -27,7 +27,6 @@ function checkNumber (num) {
     console.log('num is Positive')
   }
 }
-
 console.log(checkNumber(0))
 console.log(checkNumber(-5))
 console.log(checkNumber(7))
