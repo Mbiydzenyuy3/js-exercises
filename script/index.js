@@ -1,44 +1,44 @@
 function calculateBanknotesWhile(amount) {
-  const denominations = [10000, 5000, 2000, 1000, 500, 100];
-  const result = {};
-  let i = 0;
+  const denominations = [10000, 5000, 2000, 1000, 500, 100]
+  const result = {}
+  let i = 0
   while (amount > 0 && i < denominations.length) {
-    const denom = denominations[i];
+    const denom = denominations[i]
     if (amount >= denom) {
       const count = Math.floor(amount / denom);
-      result[denom] = count;
-      amount %= denom;
+      result[denom] = count
+      amount %= denom
     }
-    i++;
+    i++
   }
-  return result;
+  return result
 }
 
-const amount = 23700;
+const amount = 23700
 const output = calculateBanknotesWhile(amount);
-console.log(output);
+console.log(output)
 
 const findLongestWord = (sentence) => {
-  const words = sentence.split(" ");
-  let longestWord = "";
+  const words = sentence.split('')
+  let longestWord = ''
 
   for (let i = 0; i < words.length; i++) {
     if (words[i].length > longestWord.length) {
-      longestWord = words[i];
+      longestWord = words[i]
     }
   }
 
-  return longestWord;
-};
-const sentence = findLongestWord("The quick brown fox jumps over the lazy dog");
-console.log(sentence);
+  return longestWord
+}
+const sentence = findLongestWord("The quick brown fox jumps over the lazy dog")
+console.log(sentence)
 
 function calculateFinalBalance(initialBalance, transactions) {
-  let finalBalance = initialBalance;
+  let finalBalance = initialBalance
   for (let i = 0; i < transactions.length; i++) {
-    finalBalance += transactions[i];
+    finalBalance += transactions[i]
   }
-  return finalBalance;
+  return finalBalance
 }
 
-console.log(calculateFinalBalance(10000, [3000, -2000, -1500, 5000]));
+console.log (calculateFinalBalance(10000, [3000, -2000, -1500, 5000]))
