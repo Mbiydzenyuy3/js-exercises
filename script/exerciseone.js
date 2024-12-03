@@ -33,13 +33,15 @@ console.log(checkNumber(-5))
 console.log(checkNumber(7))
 
 // Write a function that accepts a string and returns the number of vowels in it
-function countVowels (str) {
-  const vowelNum = str.toLowerCase().split('')
-  const vowel = ['a', 'e', 'i', 'o', 'u']
+function countVowels(str) {
+  const vowels = ['a', 'e', 'i', 'o', 'u']
   let vowelCount = 0
 
-  for (let i = 0; i < vowelNum.length; i++) {
-    if (vowel.includes(vowelNum[i])) vowelCount++
+  for (let numberOfVowels of str.toLowerCase()) {
+    if (vowels.includes(numberOfVowels)) vowelCount++;
   }
   return vowelCount
 }
+
+console.log(countVowels("Hello World"))
+

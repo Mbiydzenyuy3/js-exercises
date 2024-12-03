@@ -5,7 +5,7 @@ function calculateBanknotesWhile (amount) {
   while (amount > 0 && i < denominations.length) {
     const denom = denominations[i]
     if (amount >= denom) {
-      const count = Math.floor (amount / denom);
+      const count = Math.floor(amount / denom)
       result[denom] = count
       amount %= denom
     }
@@ -15,11 +15,11 @@ function calculateBanknotesWhile (amount) {
 }
 
 const amount = 23700
-const output = calculateBanknotesWhile (amount)
-console.log (output)
+const output = calculateBanknotesWhile(amount)
+console.log(output)
 
 const findLongestWord = (sentence) => {
-  const words = sentence.split ('')
+  const words = sentence.split('')
   let longestWord = ''
 
   for (let i = 0; i < words.length; i++) {
