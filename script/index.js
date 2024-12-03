@@ -30,7 +30,7 @@ const findLongestWord = (sentence) => {
 
   return longestWord
 }
-const sentence = findLongestWord ('The quick brown fox jumps over the lazy dog')
+const sentence = findLongestWord('The quick brown fox jumps over the lazy dog')
 console.log(sentence)
 
 function calculateFinalBalance (initialBalance, transactions) {

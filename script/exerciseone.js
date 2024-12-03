@@ -37,11 +37,10 @@ function countVowels(str) {
   const vowels = ['a', 'e', 'i', 'o', 'u']
   let vowelCount = 0
 
-  for (let numberOfVowels of str.toLowerCase()) {
-    if (vowels.includes(numberOfVowels)) vowelCount++;
+  for (const numberOfVowels of str.toLowerCase()) {
+    if (vowels.includes(numberOfVowels)) vowelCount++
   }
   return vowelCount
 }
 
-console.log(countVowels("Hello World"))
-
+console.log(countVowels('Hello World'))
