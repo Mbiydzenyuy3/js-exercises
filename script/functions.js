@@ -14,9 +14,9 @@ const person = {
   name: 'Leila',
   age: 25
 }
-
+console.log(typeof person.name)
 function introducePerson (person) {
-  if (person && typeof person.name === 'string' && typeof person.age === 'number') {
+  if (typeof person.name === 'string' &&  typeof person.age === 'number') {
     return `Hi, my name is ${person.name} and I am ${person.age} years old`
   } else {
     return 'Person data not found'
