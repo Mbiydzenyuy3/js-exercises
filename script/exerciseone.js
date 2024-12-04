@@ -21,10 +21,12 @@ console.log('Area:', area)
 function checkNumber (num) {
   if (num === 0) {
     console.log('num is Zero')
-  } else if (num < 0 && num <= -5) {
+  } else if (num < 0 ) {
     console.log('num is negative')
-  } else if (num > 0 && num === 7) {
+  }  else if (num > 0 ) {
     console.log('num is Positive')
+  }else {
+    console.log ('NaN')
   }
 }
 console.log(checkNumber(0))
