@@ -15,14 +15,12 @@ const person = {
   age: 25,
 }
 
-function introducePerson (person) {
-  if (person && typeof person.name === 'string' && typeof person.age === 'number'){
+function introducePerson (person){
+  if(person && typeof person.name === 'string' && typeof person.age === 'number'){
     return `Hi, my name is ${person.name} and I am ${person.age} years old`
-  }else {
+  }else{
     return `Person data not found`
   }
 }
 
-console.log(
-  person['Hi, my name is ' + person.name + ' and I am ' + person.age]
-)
+console.log(introducePerson(person))
