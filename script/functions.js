@@ -10,28 +10,19 @@
 // Create a promise that rejects with an error message Something went wrong. and handle the error using catch.
 // Create a function doubleAfter2Seconds that doubles a number after 2 seconds. Chain the calls to double 5 three times.
 
-let personOne = {
-  name: "Leila",
+const person = {
+  name: 'Leila',
   age: 25,
-};
+}
 
-let personTwo = {
-  name: "Robert",
-  age: 19,
-};
-
-let personThree = {
-  name: "Nadine",
-  age: 17,
-};
-
-let personFour = {
-  name: "Ciara",
-  age: 18,
-};  
-
-function introducePerson(person) {}
+function introducePerson (person) {
+  if (person && typeof person.name === 'string' && typeof person.age === 'number'){
+    return `Hi, my name is ${person.name} and I am ${person.age} years old`
+  }else {
+    return `Person data not found`
+  }
+}
 
 console.log(
-  person["Hi, my name is " + person.name + " and I am " + person.age]
-);
+  person['Hi, my name is ' + person.name + ' and I am ' + person.age]
+)
